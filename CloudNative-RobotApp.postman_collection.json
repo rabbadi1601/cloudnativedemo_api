@@ -12,7 +12,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://52.148.148.151:8080/api/cart/add/RajuAbbadi/RED/2",
+					"raw": "http://{{host}}:8080/api/cart/add/RajuAbbadi/RED/2",
 					"protocol": "http",
 					"host": [
 						"52",
@@ -39,7 +39,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://52.148.148.151:8080/api/ratings/api/fetch/RED",
+					"raw": "http://{{host}}:8080/api/ratings/api/fetch/RED",
 					"protocol": "http",
 					"host": [
 						"52",
@@ -89,7 +89,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://52.148.148.151:8080/api/catalogue/products/Robot",
+					"raw": "http://{{host}}:8080/api/catalogue/products/Robot",
 					"protocol": "http",
 					"host": [
 						"52",
@@ -114,7 +114,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://52.148.148.151:8080/api/user/history/RajuAbbadi",
+					"raw": "http://{{host}}:8080/api/user/history/RajuAbbadi",
 					"protocol": "http",
 					"host": [
 						"52",
@@ -156,7 +156,7 @@
 					"raw": "{\"name\":\"RajuAbbadi\",\"password\":\"Test123\"}"
 				},
 				"url": {
-					"raw": "http://52.148.148.151:8080/api/user/login",
+					"raw": "http://{{host}}:8080/api/user/login",
 					"protocol": "http",
 					"host": [
 						"52",
@@ -180,7 +180,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://52.148.148.151:8080/api/cart/cart/RajuAbbadi",
+					"raw": "http://{{host}}:8080/api/cart/cart/RajuAbbadi",
 					"protocol": "http",
 					"host": [
 						"52",
@@ -205,7 +205,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://4.242.86.120:8080/api/shipping/codes",
+					"raw": "http://{{host}}:8080/api/shipping/codes",
 					"protocol": "http",
 					"host": [
 						"4",
