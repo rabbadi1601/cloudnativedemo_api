@@ -8,20 +8,29 @@
 	"item": [
 		{
 			"name": "add_to_Cart",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://{{host}}:8080/api/cart/add/RajuAbbadi/RED/2",
+					"raw": "http:///{{host}}:8080/api/cart/add/RajuAbbadi/RED/2",
 					"protocol": "http",
-					"host": [
-						"52",
-						"148",
-						"148",
-						"151"
-					],
-					"port": "8080",
 					"path": [
+						"{{host}}:8080",
 						"api",
 						"cart",
 						"add",
@@ -35,6 +44,21 @@
 		},
 		{
 			"name": "fetchRatings",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -42,10 +66,7 @@
 					"raw": "http://{{host}}:8080/api/ratings/api/fetch/RED",
 					"protocol": "http",
 					"host": [
-						"52",
-						"148",
-						"148",
-						"151"
+						"{{host}}"
 					],
 					"port": "8080",
 					"path": [
@@ -61,6 +82,21 @@
 		},
 		{
 			"name": "submitRatings",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
 			"request": {
 				"method": "PUT",
 				"header": [],
@@ -85,6 +121,21 @@
 		},
 		{
 			"name": "proudctCatelogue",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -92,10 +143,7 @@
 					"raw": "http://{{host}}:8080/api/catalogue/products/Robot",
 					"protocol": "http",
 					"host": [
-						"52",
-						"148",
-						"148",
-						"151"
+						"{{host}}"
 					],
 					"port": "8080",
 					"path": [
@@ -110,6 +158,21 @@
 		},
 		{
 			"name": "user_history",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -117,10 +180,7 @@
 					"raw": "http://{{host}}:8080/api/user/history/RajuAbbadi",
 					"protocol": "http",
 					"host": [
-						"52",
-						"148",
-						"148",
-						"151"
+						"{{host}}"
 					],
 					"port": "8080",
 					"path": [
@@ -176,24 +236,36 @@
 		},
 		{
 			"name": "ListCartValues",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://{{host}}:8080/api/cart/cart/RajuAbbadi",
+					"raw": "http://{{host}}:8080/api/cart/cart/Test",
 					"protocol": "http",
 					"host": [
-						"52",
-						"148",
-						"148",
-						"151"
+						"{{host}}"
 					],
 					"port": "8080",
 					"path": [
 						"api",
 						"cart",
 						"cart",
-						"RajuAbbadi"
+						"Test"
 					]
 				}
 			},
@@ -201,6 +273,21 @@
 		},
 		{
 			"name": "shipping_codes",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -218,6 +305,60 @@
 						"api",
 						"shipping",
 						"codes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserRegister",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Origin",
+						"value": "http://{{host}}:8080"
+					},
+					{
+						"key": "Referer",
+						"value": "http://{{host}}:8080/login"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"Test5\",\"email\":\"\",\"password\":\"Test123\"}"
+				},
+				"url": {
+					"raw": "http:/{{host}}:8080/api/user/register",
+					"host": [
+						"http"
+					],
+					"port": "",
+					"path": [
+						"{{host}}:8080",
+						"api",
+						"user",
+						"register"
 					]
 				}
 			},
